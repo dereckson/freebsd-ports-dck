@@ -1,0 +1,46 @@
+bin/guake
+bin/guake-prefs
+etc/gconf/schemas/guake.schemas
+etc/xdg/autostart/guake.desktop
+lib/guake/common.py
+lib/guake/dbusiface.py
+lib/guake/globalhotkeys.a
+lib/guake/globalhotkeys.la
+lib/guake/globalhotkeys.so
+lib/guake/guake.py
+lib/guake/guake_globals.py
+lib/guake/prefs.py
+lib/guake/simplegladeapp.py
+lib/guake/common.pyo
+lib/guake/dbusiface.pyo
+lib/guake/guake_globals.pyo
+lib/guake/prefs.pyo
+lib/guake/simplegladeapp.pyo
+lib/locale/de/LC_MESSAGES/guake.mo
+lib/locale/el/LC_MESSAGES/guake.mo
+lib/locale/es/LC_MESSAGES/guake.mo
+lib/locale/fa/LC_MESSAGES/guake.mo
+lib/locale/fr/LC_MESSAGES/guake.mo
+lib/locale/hu/LC_MESSAGES/guake.mo
+lib/locale/it/LC_MESSAGES/guake.mo
+lib/locale/ja/LC_MESSAGES/guake.mo
+lib/locale/no/LC_MESSAGES/guake.mo
+lib/locale/pl/LC_MESSAGES/guake.mo
+lib/locale/pt_BR/LC_MESSAGES/guake.mo
+lib/locale/ru/LC_MESSAGES/guake.mo
+lib/locale/zh_CN/LC_MESSAGES/guake.mo
+man/man1/guake.1
+share/applications/guake-prefs.desktop
+share/applications/guake.desktop
+share/dbus-1/services/org.guake.Guake.service
+share/guake/about.glade
+share/guake/guake.glade
+share/guake/prefs.glade
+share/pixmaps/guake/add_tab.png
+share/pixmaps/guake/guake-notification.png
+share/pixmaps/guake/guake-tray.png
+share/pixmaps/guake/guake.png
+share/pixmaps/guake/guake.svg
+@dirrm share/pixmaps/guake
+@dirrm share/guake
+@dirrm lib/guake
