@@ -2,7 +2,7 @@
 # Date created:                         29 September 2010
 # Whom:                                 Dereckson <dereckson@gmail.com>
 #
-# $FreeBSD: ports/net-p2p/ctcs/Makefile,v 1.2 2009/08/22 00:32:10 amdmi3 Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	simon
