@@ -1,0 +1,7 @@
+.
+├── accessibility
+│   └── simon           Compil errors, extra -ldl during the configure
+├── net-im
+│   └── ttytter         Waiting pr 151352, then it will be the current maintainer work
+└── x11
+    └── guake           .schema doesn't install/uninstall properly
