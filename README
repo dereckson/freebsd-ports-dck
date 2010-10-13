@@ -1,6 +1,8 @@
 .
 ├── accessibility
 │   └── simon           Compil errors, extra -ldl during the configure
+├── irc
+│   └── irccat          Port installs and uninstalls, but software have a ruby path problem
 ├── net-im
 │   └── ttytter         Waiting pr 151352, then it will be the current maintainer work
 └── x11

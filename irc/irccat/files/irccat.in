@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# $FreeBSD$
+#
+# PROVIDE: irccat
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
+#
+# Add the following lines to /etc/rc.conf.local or /etc/rc.conf
+# to enable this service:
+#
+# irccat_enable (bool):	Set to NO by default.
+# 			Set it to YES to enable irccat.
+# irccat_config (path):	Set to %%PREFIX%%/etc/irccat.yml
+# 			by default.
+#
+
+. /etc/rc.subr
+
+procname="irccat"
+name="irccat"
+rcvar=${name}_enable
+
+command=%%PREFIX%%/bin/${name}
+#pidfile=/var/run/${name}.pid
+
+load_rc_config $name
+
+: ${irccat_enable="NO"}
+: ${irccat_config="%%PREFIX%%/etc/irccat.yml"}
+
+command_args="-c $irccat_config"
+
+run_rc_command "$1"
