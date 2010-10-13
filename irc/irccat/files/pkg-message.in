@@ -1,0 +1,8 @@
+│-------------------------------------------------------------------------
+irccairc_cat was installed.
+
+You'll find a sample configuration file in your %%PREFIX%%/etc/irccat.yml
+You now have to edit the configuration file: %%PREFIX%%/etc/irccat.yml
+Then, you can start the server with %%PREFIX%%/etc/rc.d/irccat start
+Set irccat_enable to YES in /etc/rc.conf or use 'onesart' instead of 'start'.
+-------------------------------------------------------------------------

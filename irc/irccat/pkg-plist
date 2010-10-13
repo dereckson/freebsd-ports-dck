@@ -1,0 +1,21 @@
+@stopdaemon irccat
+bin/icat
+bin/iecho
+bin/irccat
+bin/irccat-config
+%%RUBY_SITELIBDIR%%/irc_cat/bot.rb
+%%RUBY_SITELIBDIR%%/irc_cat/indifferent_access.rb
+%%RUBY_SITELIBDIR%%/irc_cat/version.rb
+%%RUBY_SITELIBDIR%%/irc_cat/tcp_client.rb
+%%RUBY_SITELIBDIR%%/irc_cat/http_server.rb
+%%RUBY_SITELIBDIR%%/irc_cat/tcp_server.rb
+%%RUBY_SITELIBDIR%%/irc_cat/http_server/github.rb
+%%RUBY_SITELIBDIR%%/irc_cat/http_server/send.rb
+@dirrm %%RUBY_SITELIBDIR%%/irc_cat/http_server
+@dirrm %%RUBY_SITELIBDIR%%/irc_cat
+@unexec if cmp -s %D/etc/irccat.yml.sample %D/etc/irccat.yml; then rm -f %D/etc/irccat.yml; fi
+etc/irccat.yml.sample
+@exec if [ ! -f %D/etc/irccat.yml ] ; then cp -p %D/%F %B/irccat.yml; fi
+%%PORTDOCS%%%%DOCSDIR%%/README.txt
+%%PORTDOCS%%%%DOCSDIR%%/History.txt
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
