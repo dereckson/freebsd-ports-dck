@@ -31,7 +31,7 @@ PLIST_FILES=	bin/${PORTNAME}
 LICENSE=	FFSL
 LICENSE_FILE=	${WRKSRC}/license.txt
 LICENSE_NAME=	Floodgap Free Software License
-LICENSE_PERMS=	pkg-mirror dist-mirror
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell
 
 .include <bsd.port.pre.mk>
 
