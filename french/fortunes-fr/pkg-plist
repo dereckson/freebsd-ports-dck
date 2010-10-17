@@ -1,0 +1,45 @@
+share/games/fortune/GDP
+share/games/fortune/GDP.dat
+share/games/fortune/bd
+share/games/fortune/bd.dat
+share/games/fortune/cinema
+share/games/fortune/cinema.dat
+share/games/fortune/droit
+share/games/fortune/droit.dat
+share/games/fortune/fr.rec.photo
+share/games/fortune/fr.rec.photo.dat
+share/games/fortune/haiku
+share/games/fortune/haiku.dat
+share/games/fortune/humoristes
+share/games/fortune/humoristes.dat
+share/games/fortune/humour
+share/games/fortune/humour.dat
+share/games/fortune/informatique
+share/games/fortune/informatique.dat
+share/games/fortune/litterature_etrangere
+share/games/fortune/litterature_etrangere.dat
+share/games/fortune/litterature_francaise
+share/games/fortune/litterature_francaise.dat
+share/games/fortune/mysoginie
+share/games/fortune/mysoginie.dat
+share/games/fortune/personnalites
+share/games/fortune/personnalites.dat
+share/games/fortune/philosophie
+share/games/fortune/philosophie.dat
+share/games/fortune/politique
+share/games/fortune/politique.dat
+share/games/fortune/proverbes
+share/games/fortune/proverbes.dat
+share/games/fortune/religion
+share/games/fortune/religion.dat
+share/games/fortune/sciences
+share/games/fortune/sciences.dat
+%%DOCSDIR%%/16eme_siecle.txt
+%%DOCSDIR%%/AUTHORS
+%%DOCSDIR%%/CHANGES
+%%DOCSDIR%%/COPYING
+%%DOCSDIR%%/README
+%%DOCSDIR%%/moyen_age.txt
+@dirrmtry share/games/fortune
+@dirrmtry share/games
+@dirrm %%DOCSDIR%%
