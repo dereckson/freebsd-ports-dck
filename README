@@ -1,6 +1,8 @@
 .
 ├── accessibility
 │   └── simon           Compil errors, extra -ldl during the configure
+├── french
+│   └── fortunes-fr     Ok in default encoding, adding UTF-8 support before submitting
 ├── irc
 │   └── irccat          Port installs and uninstalls, but software have a ruby path problem
 ├── net-im
