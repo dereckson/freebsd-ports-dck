@@ -1,0 +1,39 @@
+--- doc/lastmp.1.orig	2010-04-19 01:41:31.000000000 +0000
++++ doc/lastmp.1	2010-11-18 14:28:20.000000000 +0000
+@@ -1,24 +1,15 @@
+ .TH lastfm 1
+ .SH NAME
+-lastmp, lastcd \- clients for lastfmsubmitd
++lastmp \- client for lastfmsubmitd
+ .SH SYNOPSIS
+ .B lastmp
+ .RI [ --debug ]
+ .RI [ --no-daemon ]
+-.br
+-.B lastcd
+-.RI [ --debug ]
+-.RI [ --stdout ]
+ .SH DESCRIPTION
+ .B lastmp
+-and
+-.B lastcd
+-are clients which send song information to lastfmsubmitd. lastmp connects to
++is a client which send song information to lastfmsubmitd. lastmp connects to
+ MPD and periodically checks for new songs and how long the current song has
+-been played. lastcd reads a serialized list of songs that were played on an
+-offline CD player, such as a car or home stereo, and sends them with estimated
+-timestamps directly to lastfmsubmitd. Such lists can be generated with
+-.IR mbget (1).
++been played. 
+ .SH OPTIONS
+ .TP
+ .B \-d, \-\-debug
+@@ -31,7 +22,7 @@
+ Write the serialized song information to standard output.
+ .SH FILES
+ .TP
+-.B /etc/lastfmsubmitd.conf
++.B %%PREFIX%%/etc/lastfmsubmitd.conf
+ The configuration file.
+ .SH SEE ALSO
+ .IR mpd (1).
