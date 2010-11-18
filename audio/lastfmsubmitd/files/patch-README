@@ -1,0 +1,11 @@
+--- README.orig	2010-11-18 12:46:22.000000000 +0000
++++ README	2010-11-18 12:47:21.000000000 +0000
+@@ -18,7 +18,7 @@
+ To send song information to lastfmsubmitd, you can do one of the
+ following:
+ 
+-  * Fork and exec /usr/lib/lastfm/lastfmsubmit. lastfmsubmit fills a
++  * Fork and exec %%PREFIX%%/lib/lastfm/lastfmsubmit. lastfmsubmit fills a
+     role similar to sendmail(1). It will take the song specified on
+     the command line with --artist, --title, --length, and optionally
+     --album and --mbid, and encode it in UTF-8 YAML. Then, it will

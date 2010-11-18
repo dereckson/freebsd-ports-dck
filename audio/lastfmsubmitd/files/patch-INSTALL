@@ -1,0 +1,23 @@
+--- INSTALL.orig	2010-11-18 16:44:30.000000000 +0000
++++ INSTALL	2010-11-18 16:45:51.000000000 +0000
+@@ -1,6 +1,9 @@
+ Installation
+ ============
+ 
++ [ Port maintainer note: Steps 1 and 2 are for reference, as the port
++   or package install have already taken care of those. ]
++
+  1. Run ``./setup.py install`` as usual.
+ 
+  2. Create a user/group for the daemon(s) (I use lastfm:lastfm), and
+@@ -14,8 +17,8 @@
+     the daemon(s) and/or music players. ``doc/install-example.sh`` shows
+     how this should be done on most systems.
+ 
+- 3. Create a configuration file, ``/etc/lastfmsubmitd.conf``. This is a
+-    regular Python ConfigParser file, and should look like::
++ 3. Create a configuration file, ``%%PREFIX%%/etc/lastfmsubmitd.conf``.
++    This is a regular Python ConfigParser file, and should look like:
+ 
+         [account]
+         user: decklin

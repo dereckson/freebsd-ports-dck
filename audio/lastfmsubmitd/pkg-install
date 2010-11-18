@@ -1,0 +1,17 @@
+#!/bin/sh
+
+#
+# This install script performs the following tasks:
+#     i. create lastfm user and group
+#    ii. make /var/log/lastfm /var/run/lastfm and /var/spool/lastfm directories
+#
+
+if [ "$2" = INSTALL ]; then
+pw groupadd -n lastfm -g 212
+pw useradd  -n lastfm -u 212 -c "liblastfmd daemon" -d /nonexistent -g lastfm -s /nonexistent
+for d in /var/log /var/run /var/spool; do
+    mkdir $d/lastfm
+    chown lastfm:lastfm $d/lastfm
+    chmod 775 $d/lastfm
+done
+fi

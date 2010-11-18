@@ -1,0 +1,11 @@
+--- contrib/INSTALL.lastmp.orig	2010-11-18 13:05:02.000000000 +0000
++++ contrib/INSTALL.lastmp	2010-11-18 12:47:42.000000000 +0000
+@@ -1,7 +1,7 @@
+ Installation
+ ============
+ 
+-Create a file ``/etc/lastmp.conf`` and put in something like:
++Create a file ``%%PREFIX%%/etc/lastmp.conf`` and put in something like:
+ 
+     [mpd]
+     host: localhost

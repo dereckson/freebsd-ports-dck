@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------
+lastfmsubmitd was sucessfully installed.
+
+For default use, create a configuration file at the following place:
+    %%PREFIX%%/etc/lastfmsubmitd.conf
+This is a regular Python ConfigParser file, and should look like:
+
+    [account]
+    user: decklin
+    password: ********
+
+If you've install documentation, the following file documents the format:
+    %%PREFIX%%/share/doc/lastfmsubmitd/INSTALL
+
+Then, you can start the server with %%PREFIX%%/etc/rc.d/lastfmsubmitd start
+Set lastfmsubmitd_enable to YES in /etc/rc.conf or use 'onesart'
+                                              instead of 'start'.
+--------------------------------------------------------------------------

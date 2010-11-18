@@ -1,0 +1,12 @@
+lastfmsubmitd is a daemon meant to be used by Last.fm player plugins. It
+handles all aspects of submitting data to the Last.fm servers, so that
+player plugins only need to watch what songs are played and write a
+representation of each played song to its spool.
+
+The format used for serializing songs is a simple YAML dictionary, which
+can be constructed with YAML libraries (available for many languages), or
+printed ad hoc. The spool is managed with standard unix permissions, and
+many different players can use the same daemon to submit. Each instance of
+lastfmsubmitd uses a single account.
+
+WWW: http://www.red-bean.com/decklin/lastfmsubmitd

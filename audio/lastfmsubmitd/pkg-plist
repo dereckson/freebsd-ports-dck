@@ -1,0 +1,17 @@
+@stopdaemon lastfmsubmitd
+bin/lastfmsubmit
+bin/lastfmsubmitd
+lib/lastfmsubmitd/lastfmsubmit
+%%PYTHON_SITELIBDIR%%/lastfm/__init__.py
+%%PYTHON_SITELIBDIR%%/lastfm/__init__.pyc
+%%PYTHON_SITELIBDIR%%/lastfm/__init__.pyo
+%%PYTHON_SITELIBDIR%%/lastfm/client.py
+%%PYTHON_SITELIBDIR%%/lastfm/client.pyc
+%%PYTHON_SITELIBDIR%%/lastfm/client.pyo
+%%PYTHON_SITELIBDIR%%/lastfm/config.py
+%%PYTHON_SITELIBDIR%%/lastfm/config.pyc
+%%PYTHON_SITELIBDIR%%/lastfm/config.pyo
+%%PYTHON_SITELIBDIR%%/lastfm/marshaller.py
+%%PYTHON_SITELIBDIR%%/lastfm/marshaller.pyc
+%%PYTHON_SITELIBDIR%%/lastfm/marshaller.pyo
+@dirrmtry %%PYTHON_SITELIBDIR%%/lastfm
