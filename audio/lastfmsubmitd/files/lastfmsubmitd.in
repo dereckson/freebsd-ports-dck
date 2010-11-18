@@ -1,0 +1,33 @@
+#!/bin/sh
+#
+# $FreeBSD$
+#
+# PROVIDE: lastfmsubmitd
+# REQUIRE: DAEMON
+#
+# Add the following lines to /etc/rc.conf to run lastfmsubmitd:
+#
+# lastfmsubmitd_enable (bool):	Set it to "YES" to enable lastfmsubmitd.
+#				Default is "NO".
+# lastfmsubmitd_user (user):	Set user to run lastfmsubmitd.
+#				Default is "lastfm".
+#
+
+. /etc/rc.subr
+
+name="lastfmsubmitd"
+procname="%%PYTHON_CMD%%"
+rcvar=${name}_enable
+pidfile=/var/run/lastfm/lastfmsubmitd.pid
+
+load_rc_config ${name}
+
+: ${lastfmsubmitd_enable="NO"}
+: ${lastfmsubmitd_user="lastfm"}
+
+command=/usr/bin/su
+command_args="-m ${lastfmsubmitd_user} -c '%%PREFIX%%/bin/lastfmsubmitd'"
+
+unset lastfmsubmitd_user
+
+run_rc_command "$1"
