@@ -2,11 +2,12 @@
 # Date created:                         7 July 2009
 # Whom:                                 Dereckson <dereckson@gmail.com>
 #
-# $FreeBSD: ports/net-p2p/ctcs/Makefile,v 1.2 2009/08/22 00:32:10 amdmi3 Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ctcs
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 MASTER_SITES=	SF/dtorrent/${PORTNAME}/${PORTVERSION}
 
@@ -15,15 +16,21 @@ COMMENT=	CTorrent monitoring and managing interface
 
 NO_BUILD=	#
 USE_PERL5_RUN=	yes
-PLIST_FILES=	bin/ctcs share/doc/ctcs/readme.txt
-PLIST_DIRS=	share/doc/ctcs
+PLIST_FILES=	bin/ctcs
 WRKSRC=		${WRKDIR}/ctcs-${PORTVERSION}
 
+.if !defined(NOPORTDOCS)
+PLIST_DIRS=	%%DOCSDIR%%
+PLIST_FILES+=	%%DOCSDIR%%/readme.txt
+.endif
+
 do-install:
-	${INSTALL} -o ${SHAREOWN} -g ${SHAREGRP} -m 0755 \
-	${WRKSRC}/ctcs ${PREFIX}/bin/ctcs
-	${MKDIR} ${PREFIX}/share/doc/ctcs
-	${INSTALL} -o ${SHAREOWN} -g ${SHAREGRP} -m 0644 \
-	${WRKSRC}/readme.txt ${PREFIX}/share/doc/ctcs/readme.txt
+	${INSTALL_SCRIPT} ${WRKSRC}/ctcs ${PREFIX}/bin
+
+post-install:
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/readme.txt ${DOCSDIR}
+.endif
 
 .include <bsd.port.mk>
