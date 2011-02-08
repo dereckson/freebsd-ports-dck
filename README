@@ -5,6 +5,8 @@
 │   └── fortunes-fr     Ok in default encoding, adding UTF-8 support before submitting
 ├── irc
 │   └── irccat          Port installs and uninstalls, but software have a ruby path problem
+├── net
+│   └── vdetelweb       configure: error: liblwipv6 missing
 ├── net-im
 │   └── ttytter         Waiting pr 151352, then it will be the current maintainer work
 └── x11
