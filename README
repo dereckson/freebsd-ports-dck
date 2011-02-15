@@ -8,6 +8,7 @@
 ├── net
 │   └── vdetelweb       configure: error: liblwipv6 missing
 ├── net-im
+│   ├── quicktun        Should be splitted in two ports instead to let build.sh fetch and build libnacl
 │   └── ttytter         Waiting pr 151352, then it will be the current maintainer work
 └── x11
-    └── guake           .schema doesn't install/uninstall properly
+    └── guake           Ensure GConf .schema does install/uninstall properly
