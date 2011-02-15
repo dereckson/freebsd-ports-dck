@@ -1,0 +1,12 @@
+QuickTun is a VPN tunnel software designed to be simple and secure.
+It relies on the NaCl encryption lib by D. J. Bernstein.
+
+QuickTun uses the curve25519xsalsa20poly1305 crypto-box functionality
+of the NaCl library for secure public-key encryption.
+
+And that's about all QuickTun does; encrypting and sending data.
+
+QuickTun itself has only a few hundred lines of pure C code, making 
+it according the author simple to maintain, analyze, debug and fix. 
+
+WWW: http://wiki.ucis.nl/QuickTun
