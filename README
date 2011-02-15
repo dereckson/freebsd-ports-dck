@@ -6,9 +6,11 @@
 ├── irc
 │   └── irccat          Port installs and uninstalls, but software have a ruby path problem
 ├── net
+│   ├── quicktun        Should be splitted in two ports instead to let build.sh fetch and build libnacl
 │   └── vdetelweb       configure: error: liblwipv6 missing
 ├── net-im
-│   ├── quicktun        Should be splitted in two ports instead to let build.sh fetch and build libnacl
 │   └── ttytter         Waiting pr 151352, then it will be the current maintainer work
+├── security
+│   └── nacl            2011-02-15, djb's crypto lib required for net/quicktun (TODO: clean this port now)
 └── x11
     └── guake           Ensure GConf .schema does install/uninstall properly
