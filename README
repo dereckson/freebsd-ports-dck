@@ -1,16 +1,18 @@
 .
 ├── accessibility
-│   └── simon           Compil errors, extra -ldl during the configure
+│   └── simon                   Compil errors, extra -ldl during the configure
 ├── french
-│   └── fortunes-fr     Ok in default encoding, adding UTF-8 support before submitting
+│   └── fortunes-fr             Ok in default encoding, adding UTF-8 support before submitting
 ├── irc
-│   └── irccat          Port installs and uninstalls, but software have a ruby path problem
+│   └── irccat                  Port installs and uninstalls, but software have a ruby path problem
+├── math
+│   ├── p5-Math-Random-Secure   Depends from security/p5-Crypt-Random-Source / pkg-plist still to do
 ├── net
-│   ├── quicktun        Should be splitted in two ports instead to let build.sh fetch and build libnacl
-│   └── vdetelweb       configure: error: liblwipv6 missing
+│   ├── quicktun                Should be splitted in two ports instead to let build.sh fetch and build libnacl
+│   └── vdetelweb               configure: error: liblwipv6 missing
 ├── net-im
-│   └── ttytter         Waiting pr 151352, then it will be the current maintainer work
+│   └── ttytter                 Waiting pr 151352, then it will be the current maintainer work
 ├── security
-│   └── nacl            2011-02-15, djb's crypto lib required for net/quicktun (TODO: clean this port now)
+│   └── nacl                    2011-02-15, djb's crypto lib required for net/quicktun (TODO: clean this port now)
 └── x11
-    └── guake           Ensure GConf .schema does install/uninstall properly
+    └── guake                   Ensure GConf .schema does install/uninstall properly
