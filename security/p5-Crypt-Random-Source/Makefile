@@ -14,10 +14,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	dereckson@gmail.com
 COMMENT=	Get weak or strong random data from pluggable sources
 
-BUILD_DEPENDS=	p5-Test-Exception>0:${PORTSDIR}/devel/p5-Test-Exception \
+TEST_DEPENDS=	p5-Test-Exception>0:${PORTSDIR}/devel/p5-Test-Exception \
 		p5-Test-use-ok>0:${PORTSDIR}/devel/p5-Test-use-ok
 RUN_DEPENDS=	p5-Capture-Tiny>=0.08:${PORTSDIR}/devel/p5-Capture-Tiny \
-		p5-Errno>0:${PORTSDIR}/devel/p5-Errno \
 		p5-Module-Find>0:${PORTSDIR}/devel/p5-Module-Find \
 		p5-Sub-Exporter>0:${PORTSDIR}/devel/p5-Sub-Exporter \
 		p5-namespace-clean>=0.08:${PORTSDIR}/devel/p5-namespace-clean
