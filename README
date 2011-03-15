@@ -15,5 +15,7 @@
 ├── security
 │   └── nacl                    2011-02-15, djb's crypto lib required for net/quicktun (TODO: clean this port now)
 │   └── p5-Crypt-Random-Source  OK
+└── www
+    └── mod_perl2               OK (update to 2.0.5)
 └── x11
     └── guake                   Ensure GConf .schema does install/uninstall properly
