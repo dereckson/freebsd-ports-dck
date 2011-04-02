@@ -1,0 +1,6 @@
+Allows to execute Python code inline from Perl.
+
+This module sets up an in-process Python interpreter, runs runs your code, and
+then examines Python's symbol table for things to bind to Perl.
+
+WWW: http://search.cpan.org/dist/Inline-Python
