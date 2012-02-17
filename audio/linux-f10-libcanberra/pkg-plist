@@ -1,0 +1,9 @@
+usr/lib/libcanberra.so.0
+usr/lib/libcanberra.so.0.1.3
+usr/lib/libcanberra/libcanberra-alsa.so
+usr/lib/libcanberra/libcanberra-gstreamer.so
+usr/lib/libcanberra/libcanberra-multi.so
+usr/lib/libcanberra/libcanberra-null.so
+usr/lib/libcanberra/libcanberra-oss.so
+usr/lib/libcanberra/libcanberra-pulse.so
+@dirrm usr/lib/libcanberra

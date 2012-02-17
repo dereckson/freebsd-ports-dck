@@ -1,6 +1,10 @@
 .
 ├── accessibility
 │   └── simon                   Compil errors, extra -ldl during the configure
+├── audio
+│   └── lastfmsubmitd		cf. PR 152376
+│   └── linux-f10-libcanberra	New dependency for editors/komodo-ide and editors/komodo-edit
+│   └── linux-f10-libcanberra-gtk2
 ├── databases
 │   └── linux-f10-libtdb        OK, ready to commit if this library is needed
 ├── devel
@@ -15,7 +19,7 @@
 │   ├── quicktun                Should be splitted in two ports instead to let build.sh fetch and build libnacl
 │   └── vdetelweb               configure: error: liblwipv6 missing
 ├── net-im
-│   └── ttytter                 Waiting pr 151352, then it will be the current maintainer work
+│   └── ttytter                 Waiting pr 151352, then it will be the current maintainer work	
 ├── security
 │   └── nacl                    2011-02-15, djb's crypto lib required for net/quicktun (TODO: clean this port now)
 │   └── p5-Crypt-Random-Source  OK
