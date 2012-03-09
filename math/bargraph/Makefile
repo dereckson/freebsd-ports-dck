@@ -5,10 +5,11 @@
 # $FreeBSD$
 #
 
-PORTNAME=	bargraphgen
+PORTNAME=	bargraph
 PORTVERSION=	4.6
 CATEGORIES=	math
-MASTER_SITES=	GOOGLE_CODE
+MASTER_SITES=	http://bargraphgen.googlecode.com/files/
+DISTNAME=	bargraphgen-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dereckson@espace-win.org
