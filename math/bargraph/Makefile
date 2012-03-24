@@ -25,10 +25,6 @@ NO_BUILD=	yes
 
 .include <bsd.port.pre.mk>
 
-#post-extract:
-#	@${MKDIR} ${WRKSRC}
-#	@${MV} ${DISTDIR}/README ${DISTDIR}/samples ${DISTDIR}/bargraph.pl  ${WRKSRC}
-
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bargraph.pl ${PREFIX}/bin/bargraph
 
