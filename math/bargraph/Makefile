@@ -1,18 +1,18 @@
 # New ports collection makefile for:	bargraph
 # Date created:        			9 March 2012
-# Whom:                			Dereckson <dereckson@espace-win.org>
+# Whom:                			Dereckson <dereckson@gmail.com>
 #
 # $FreeBSD$
 #
 
 PORTNAME=	bargraph
-PORTVERSION=	4.6
+PORTVERSION=	4.7
 CATEGORIES=	math
 MASTER_SITES=	http://bargraphgen.googlecode.com/files/
 DISTNAME=	bargraphgen-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	dereckson@espace-win.org
+MAINTAINER=	dereckson@gmail.com
 COMMENT=	Scriptable bar graph generator
 
 RUN_DEPENDS=	${LOCALBASE}/bin/fig2dev:${PORTSDIR}/print/transfig \
