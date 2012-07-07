@@ -1,0 +1,3 @@
+codemod is an helper tool to assist you with large-scale codebase refactors that
+can be partially automated but still require human oversight and occassional
+intervention.
