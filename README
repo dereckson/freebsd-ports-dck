@@ -13,6 +13,8 @@
 │   └── fortunes-fr             Ok in default encoding, adding UTF-8 support before submitting
 ├── irc
 │   └── irccat                  Port installs and uninstalls, but software have a ruby path problem
+├── lang
+│   └── malbolge                Ok, ready to commit
 ├── math
 │   ├── bargraph		Needs testing
 │   └── p5-Math-Random-Secure   Depends from security/p5-Crypt-Random-Source / pkg-plist still to do
