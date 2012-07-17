@@ -1,8 +1,8 @@
-# New ports collection makefile for:    malbolge
-# Date created:                         13 July 2012
-# Whom:                                 Dereckson <dereckson@gmail.com>
+# New ports collection makefile for:	malbolge
+# Date created:		13 July 2012
+# Whom:		Dereckson <dereckson@gmail.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/malbolge/Makefile,v 1.5 2012/07/17 16:37:38 jgh Exp $
 #
 
 PORTNAME=	malbolge
@@ -15,18 +15,17 @@ COMMENT=	An esoteric language
 
 PLIST_FILES=	bin/malbolge
 
-.if !defined(NOPORTDOCS)
-PLIST_DIRS=	%%DOCSDIR%%
-PLIST_FILES+=	%%DOCSDIR%%/malbolge.txt
-.endif
+PORTDOCS=	*
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/malbolge ${PREFIX}/bin
 
+.include <bsd.port.options.mk>
+
 post-install:
-.if !defined(NOPORTDOCS)
-	${MKDIR} ${DOCSDIR}/
-	${INSTALL_DATA} ${WRKSRC}/malbolge.txt ${DOCSDIR}/
+.if ${PORT_OPTIONS:MDOCS}
+	${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/malbolge.txt ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
