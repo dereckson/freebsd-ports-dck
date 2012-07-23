@@ -19,6 +19,7 @@
 │   ├── bargraph		Needs testing
 │   └── p5-Math-Random-Secure   Depends from security/p5-Crypt-Random-Source / pkg-plist still to do
 ├── net
+│   ├── gophrier                Needs testing
 │   ├── quicktun                Should be splitted in two ports instead to let build.sh fetch and build libnacl
 │   └── vdetelweb               configure: error: liblwipv6 missing
 ├── net-im
