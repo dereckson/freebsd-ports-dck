@@ -1,0 +1,6 @@
+Reads and outputs MARC record file.
+
+Provides a set of Perl modules to manipulate MARC objects like
+parsers, record formaters, file readers and data structures.
+
+WWW: http://search.cpan.org/dist/marc-moose/
