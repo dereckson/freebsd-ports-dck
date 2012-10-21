@@ -1,0 +1,43 @@
+bin/marcmoose
+%%SITE_PERL%%/MARC/Moose.pm
+%%SITE_PERL%%/MARC/Moose/Field.pm
+%%SITE_PERL%%/MARC/Moose/Field/Control.pm
+%%SITE_PERL%%/MARC/Moose/Field/Std.pm
+%%SITE_PERL%%/MARC/Moose/Formater.pm
+%%SITE_PERL%%/MARC/Moose/Formater/Iso2709.pm
+%%SITE_PERL%%/MARC/Moose/Formater/Json.pm
+%%SITE_PERL%%/MARC/Moose/Formater/Legacy.pm
+%%SITE_PERL%%/MARC/Moose/Formater/Marcxml.pm
+%%SITE_PERL%%/MARC/Moose/Formater/Text.pm
+%%SITE_PERL%%/MARC/Moose/Formater/UnimarcToMarc21.pm
+%%SITE_PERL%%/MARC/Moose/Formater/Yaml.pm
+%%SITE_PERL%%/MARC/Moose/Parser.pm
+%%SITE_PERL%%/MARC/Moose/Parser/Isis.pm
+%%SITE_PERL%%/MARC/Moose/Parser/Iso2709.pm
+%%SITE_PERL%%/MARC/Moose/Parser/Json.pm
+%%SITE_PERL%%/MARC/Moose/Parser/Legacy.pm
+%%SITE_PERL%%/MARC/Moose/Parser/Marcxml.pm
+%%SITE_PERL%%/MARC/Moose/Parser/MarcxmlSax.pm
+%%SITE_PERL%%/MARC/Moose/Parser/MarcxmlSaxHandler.pm
+%%SITE_PERL%%/MARC/Moose/Parser/MarcxmlSaxSimple.pm
+%%SITE_PERL%%/MARC/Moose/Parser/Yaml.pm
+%%SITE_PERL%%/MARC/Moose/Reader.pm
+%%SITE_PERL%%/MARC/Moose/Reader/File.pm
+%%SITE_PERL%%/MARC/Moose/Reader/File/Isis.pm
+%%SITE_PERL%%/MARC/Moose/Reader/File/Iso2709.pm
+%%SITE_PERL%%/MARC/Moose/Reader/File/Marcxml.pm
+%%SITE_PERL%%/MARC/Moose/Reader/String.pm
+%%SITE_PERL%%/MARC/Moose/Reader/String/Iso2709.pm
+%%SITE_PERL%%/MARC/Moose/Record.pm
+%%SITE_PERL%%/MARC/Moose/Writer.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/auto/marc/moose/.packlist
+@dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/marc/moose
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/marc
+@dirrm %%SITE_PERL%%/MARC/Moose/Reader/String
+@dirrm %%SITE_PERL%%/MARC/Moose/Reader/File
+@dirrm %%SITE_PERL%%/MARC/Moose/Reader
+@dirrm %%SITE_PERL%%/MARC/Moose/Parser
+@dirrm %%SITE_PERL%%/MARC/Moose/Formater
+@dirrm %%SITE_PERL%%/MARC/Moose/Field
+@dirrm %%SITE_PERL%%/MARC/Moose
+@dirrmtry %%SITE_PERL%%/MARC
