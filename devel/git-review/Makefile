@@ -1,22 +1,18 @@
-# New ports collection makefile for:	git-review
-# Date created:				21 October 2012
-# Whom:					Sébastien Santoro <dereckson@espace-win.org>
-#
 # $FreeBSD$
-#
 
 PORTNAME=	git-review
-PORTVERSION=	1.18
+PORTVERSION=	1.19
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 MASTER_SITE_SUBDIR=	source/g/${PORTNAME}
 
-MAINTAINER=	dereckson@espace-win.org
+MAINTAINER=	dereckson@gmail.com
 COMMENT=	Allow to push review and interact with a Gerrit server
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argparse>0:${PORTSDIR}/devel/py-argparse
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argparse>0:${PORTSDIR}/devel/py-argparse \
+		git:${PORTSDIR}/devel/git
 
-USE_PYTHON=	#yes
+USE_PYTHON=	yes
 NO_BUILD=	yes
 
 LICENSE=	AL2
