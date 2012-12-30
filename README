@@ -8,17 +8,11 @@
 ├── databases
 │   └── linux-f10-libtdb        OK, ready to commit if this library is needed
 ├── devel
-│   ├── git-review		To test
 │   └── p5-Inline-Python        To test
 ├── french
 │   └── fortunes-fr             Ok in default encoding, adding UTF-8 support before submitting
 ├── irc
 │   └── irccat                  Port installs and uninstalls, but software have a ruby path problem
-├── lang
-│   └── malbolge                Ok, ready to commit
-├── math
-│   ├── bargraph		Needs testing
-│   └── p5-Math-Random-Secure   Depends from security/p5-Crypt-Random-Source / pkg-plist still to do
 ├── net
 │   ├── gophrier                Needs testing
 │   ├── quicktun                Should be splitted in two ports instead to let build.sh fetch and build libnacl
@@ -29,10 +23,7 @@
 │   └── ttytter                 Waiting pr 151352, then it will be the current maintainer work	
 ├── security
 │   └── nacl                    2011-02-15, djb's crypto lib required for net/quicktun (TODO: clean this port now)
-│   └── p5-Crypt-Random-Source  OK
 └── textproc
     └── p5-marc-moose           Needs devel/p5-MooseX-RW
-└── www
-    └── mod_perl2               OK (update to 2.0.5)
 └── x11
     └── guake                   Ensure GConf .schema does install/uninstall properly
