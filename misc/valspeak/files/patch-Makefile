@@ -1,0 +1,13 @@
+diff --git Makefile Makefile
+index b46cf0e..07367ff 100644
+--- Makefile
++++ Makefile
+@@ -1,6 +1,7 @@
+-
+ CFLAGS= -O
+ 
++all: valspeak
++
+ valspeak:	valspeak.l
+ 	lex valspeak.l
+ 	cc $(CFLAGS) lex.yy.c -ll -o valspeak

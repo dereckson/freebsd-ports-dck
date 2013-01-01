@@ -13,6 +13,8 @@
 │   └── fortunes-fr             Ok in default encoding, adding UTF-8 support before submitting
 ├── irc
 │   └── irccat                  Port installs and uninstalls, but software have a ruby path problem
+├── misc
+│   ├── valspeak                OK
 ├── net
 │   ├── gophrier                Needs testing
 │   ├── quicktun                Should be splitted in two ports instead to let build.sh fetch and build libnacl
