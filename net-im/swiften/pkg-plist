@@ -628,6 +628,9 @@ include/Swiften/Whiteboard/WhiteboardSession.h
 include/Swiften/Whiteboard/WhiteboardSessionManager.h
 include/Swiften/Whiteboard/WhiteboardTransformer.h
 lib/libSwiften.a
+lib/libSwiften.so
+lib/libSwiften.so.2
+lib/libSwiften.so.2.0
 @dirrm include/Swiften/AdHoc
 @dirrm include/Swiften/Avatars
 @dirrm include/Swiften/Base
