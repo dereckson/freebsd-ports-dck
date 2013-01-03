@@ -10,6 +10,10 @@ COMMENT=	Filter that converts English text to valspeak
 
 CONFLICTS=	filters-* talkfilters-*
 
+RESTRICTED=     1986 software shared on the net.sources newsgroup \
+		with the intent to redistribute it, but without any \
+		license or author information clearly available.
+
 PLIST_FILES=	bin/valspeak
 
 do-install:
