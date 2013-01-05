@@ -1,3 +1,4 @@
+# Created by: Sébastien Santoro <dereckson@gmail.com>
 # $FreeBSD$
 
 PORTNAME=	tclsoap
@@ -10,6 +11,8 @@ MAINTAINER=	dereckson@gmail.com
 COMMENT=	SOAP and XML-RPC support for TCL library
 
 RUN_DEPENDS=	${LOCALBASE}/lib/TclxmlConfig.sh:${PORTSDIR}/devel/tclxml
+
+LICENSE=	MIT
 
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}
 
