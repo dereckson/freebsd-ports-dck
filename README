@@ -28,5 +28,6 @@
 │   └── nacl                    2011-02-15, djb's crypto lib required for net/quicktun (TODO: clean this port now)
 └── textproc
     └── p5-marc-moose           Needs devel/p5-MooseX-RW
+│   └── xmlgen			OK
 └── x11
     └── guake                   Ensure GConf .schema does install/uninstall properly
