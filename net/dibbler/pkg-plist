@@ -1,0 +1,54 @@
+man/man8/dibbler-client.8.gz
+man/man8/dibbler-relay.8.gz
+man/man8/dibbler-server.8.gz
+sbin/dibbler-client
+sbin/dibbler-relay
+sbin/dibbler-requestor
+sbin/dibbler-server
+%%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
+%%PORTDOCS%%%%DOCSDIR%%/LICENSE
+%%PORTDOCS%%%%DOCSDIR%%/RELNOTES
+%%PORTDOCS%%%%DOCSDIR%%/dibbler-user.pdf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client-addrparams.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client-auth.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client-autodetect.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client-custom.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client-fqdn.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client-prefix-delegation.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client-stateless.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client-ta.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client-win32.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/client.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/relay-1interface.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/relay-echo-remoteid.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/relay.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-3classes.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-addrparams.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-auth.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-bulk-lq.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-client-classification.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-extraopts.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-fqdn.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-guess-mode.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-leasequery.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-per-client.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-prefix-delegation.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-relay-interface-id.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-relay.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-route.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-script.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-stateless.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-subnet.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-ta.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server-win32.conf
+%%PORTDOCS%%%%DOCSDIR%%/examples/server.conf
+%%PORTDOCS%%%%DOCSDIR%%/scripts/bison-sanitizer.py
+%%PORTDOCS%%%%DOCSDIR%%/scripts/notify-scripts/client-notify-bsd.sh
+%%PORTDOCS%%%%DOCSDIR%%/scripts/notify-scripts/client-notify-linux.sh
+%%PORTDOCS%%%%DOCSDIR%%/scripts/notify-scripts/client-notify-macos.sh
+%%PORTDOCS%%%%DOCSDIR%%/scripts/notify-scripts/server-notify.sh
+%%PORTDOCS%%%%DOCSDIR%%/scripts/remote-autoconf
+%%PORTDOCS%%@dirrmtry %%DOCSDIR%%/examples
+%%PORTDOCS%%@dirrmtry %%DOCSDIR%%/scripts/notify-scripts
+%%PORTDOCS%%@dirrmtry %%DOCSDIR%%/scripts
+%%PORTDOCS%%@dirrmtry %%DOCSDIR%%
