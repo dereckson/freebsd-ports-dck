@@ -20,7 +20,7 @@ RUN_DEPENDS=	${LOCALBASE}/bin/minitar:${PORTSDIR}/archivers/rubygem-archive-tar-
 		rubygem-net-ssh-multi>=1.2.0:${PORTSDIR}/security/rubygem-net-ssh-multi \
 		rubygem-open4>0:${PORTSDIR}/devel/rubygem-open4
 
-NO_ARCH=yes
+NO_ARCH=	yes
 USE_RUBY=	yes
 USE_RUBYGEMS=	yes
 RUBYGEM_AUTOPLIST=	yes
