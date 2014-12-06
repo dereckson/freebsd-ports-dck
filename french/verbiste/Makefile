@@ -11,7 +11,7 @@ COMMENT=	French verb conjugator/deconjugator
 
 LICENSE=	GPLv2
 
-OPTIONS_DEFINE=	GTK2 GNOME DOCS EXAMPLES NLS
+OPTIONS_DEFINE=	GTK2 GNOME DOCS EXAMPLES
 
 USES=		pathfix pkgconfig iconv libtool shebangfix
 SHEBANG_FILES=	${WRKSRC}/examples/*.pl
@@ -24,10 +24,6 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 .include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MNLS}
-USES+=		gettext
-.endif
 
 .if ${PORT_OPTIONS:MGTK2}
 USE_GNOME+=	gtk20
@@ -46,6 +42,7 @@ PLIST_SUB+=	HASGNOME="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MGTK2} || ${PORT_OPTIONS:MGNOME}
+USES+=		gettext
 PLIST_SUB+=	HASGUI=""
 .else
 PLIST_SUB+=	HASGUI="@comment "
