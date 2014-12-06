@@ -22,7 +22,13 @@ man/man3/verbiste.3.gz
 %%HASGUI%%share/locale/de/LC_MESSAGES/verbiste.mo
 %%HASGUI%%share/locale/fr/LC_MESSAGES/verbiste.mo
 %%HASGUI%%share/locale/el/LC_MESSAGES/verbiste.mo
-%%HASGUI%%share/pixmaps/verbiste.png
+%%HASGUI%%share/icons/hicolor/16x16/apps/verbiste.png
+%%HASGUI%%share/icons/hicolor/32x32/apps/verbiste.png
+%%HASGUI%%share/icons/hicolor/48x48/apps/verbiste.png
+%%HASGUI%%share/icons/hicolor/64x64/apps/verbiste.png
+%%HASGUI%%share/icons/hicolor/128x128/apps/verbiste.png
+%%HASGUI%%share/icons/hicolor/256x256/apps/verbiste.png
+%%HASGUI%%share/icons/hicolor/512x512/apps/verbiste.png
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/COPYING
 %%PORTDOCS%%%%DOCSDIR%%/HACKING
