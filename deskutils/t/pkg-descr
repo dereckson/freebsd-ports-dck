@@ -1,0 +1,6 @@
+t is a command-line todo list manager, lightweight and straightforward.
+
+It limits the number of features to avoid to organize tasks and stores
+them to a plain text file.
+
+WWW: http://stevelosh.com/projects/t/
