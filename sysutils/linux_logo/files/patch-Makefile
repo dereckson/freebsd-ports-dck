@@ -1,0 +1,20 @@
+--- Makefile.dist	2010-11-15 17:20:33.000000000 +0000
++++ Makefile	2020-01-18 05:07:50.517846000 +0000
+@@ -10,6 +10,9 @@
+ #   LDFLAGS += -lintl
+ #endif
+ 
++LDFLAGS += -L/usr/local/lib -lintl
++
++
+ #
+ # Installation location
+ #
+@@ -85,6 +88,7 @@
+ 	@echo Compiling for $(OS)
+ 	@echo Edit defaults.h to change Default Values
+ 	$(CROSS)$(CC) $(CFLAGS) $(LIBSYSINFO_INCLUDE) \
++              -I /usr/local/include \
+ 		      -DLOCALE_DIR=\"$(PREFIX)/share/locale\" -DUSE_I18N=$(USE_I18N) \
+ 		      -c linux_logo.c
+ 
