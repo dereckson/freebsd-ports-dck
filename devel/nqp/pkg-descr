@@ -1,0 +1,4 @@
+NQP, aka "Not Quite Perl" is a ightweight Raku-like environment
+for virtual machines.
+
+WWW: https://github.com/Raku/nqp

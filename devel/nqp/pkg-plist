@@ -1,0 +1,15 @@
+bin/nqp
+bin/nqp-m
+%%DATADIR%%/lib/MASTNodes.moarvm
+%%DATADIR%%/lib/MASTOps.moarvm
+%%DATADIR%%/lib/ModuleLoader.moarvm
+%%DATADIR%%/lib/NQPCORE.setting.moarvm
+%%DATADIR%%/lib/NQPHLL.moarvm
+%%DATADIR%%/lib/NQPP5QRegex.moarvm
+%%DATADIR%%/lib/NQPP6QRegex.moarvm
+%%DATADIR%%/lib/QAST.moarvm
+%%DATADIR%%/lib/QASTNode.moarvm
+%%DATADIR%%/lib/QRegex.moarvm
+%%DATADIR%%/lib/nqp.moarvm
+%%DATADIR%%/lib/nqpmo.moarvm
+%%DATADIR%%/lib/profiler/template.html
