@@ -19,6 +19,9 @@ USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	naemon
 
+USERS=	naemon
+GROUPS=	naemon
+
 post-install:
 	${RM} ${STAGEDIR}${PREFIX}/etc/init.d/naemon
 	${RM} ${STAGEDIR}${PREFIX}/etc/logrotate.d/naemon
