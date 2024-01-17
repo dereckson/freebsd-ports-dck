@@ -1,0 +1,6 @@
+Naemon is the new monitoring suite that aims to be fast, stable and 
+innovative while giving you a clear view of the state of your
+network and applications.
+
+This component is a fork of Mattias Kettner's mk_livestatus to act
+as an event broker for Naemon.

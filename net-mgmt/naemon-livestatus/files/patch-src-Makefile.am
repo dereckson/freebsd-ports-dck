@@ -1,0 +1,13 @@
+diff --git src/Makefile.am src/Makefile.am
+index ff8630c..c39da5f 100644
+--- src/Makefile.am
++++ src/Makefile.am
+@@ -30,7 +30,7 @@ EXTRA_DIST = *.h
+ 
+ pkglib_LTLIBRARIES = livestatus.la
+ livestatus_la_LDFLAGS = -module -avoid-version -shared $(ICU_LIBS) $(NAEMON_LIBS)
+-livestatus_la_CXXFLAGS = $(CXXFLAGS) -lpthread -lstdc++ $(NAEMON_CFLAGS)
++livestatus_la_CXXFLAGS = $(CXXFLAGS) -lpthread -lc++ $(NAEMON_CFLAGS)
+ livestatus_la_CFLAGS = $(CFLAGS) $(ICU_CFLAGS) $(NAEMON_CFLAGS)
+ livestatus_la_SOURCES = \
+ 	AndingFilter.cc Column.cc ColumnsColumn.cc CustomVarsExplicitColumn.cc \
