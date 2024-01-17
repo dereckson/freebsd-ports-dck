@@ -1,0 +1,70 @@
+#!/bin/sh
+
+# PROVIDE: naemon
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
+
+#
+# Add the following lines to /etc/rc.conf to enable naemon:
+# naemon_enable (bool):    Set to "NO" by default.
+#                          Set it to "YES" to enable naemon.
+# naemon_flags (str):      Set to "" by default.
+# naemon_configfile (str): Set to "%%ETCDIR%%/naemon.cfg" by default.
+#
+
+. /etc/rc.subr
+
+name=naemon
+rcvar=naemon_enable
+
+load_rc_config "${name}"
+
+start_precmd=start_precmd
+restart_precmd=naemon_checkconfig
+reload_precmd=reload_precmd
+configtest_cmd=naemon_checkconfig
+sig_reload=HUP
+
+naemon_enable=${naemon_enable:-"NO"}
+naemon_program=${naemon_program:-"%%PREFIX%%/bin/naemon"}	# Path to named, if you want a different one.
+command_args=${command_args:-"-d"}
+extra_commands=${extra_commands:-"reload configtest"}
+pidfile=${pidfile:-"%%NAEMONDIR%%/naemon.lock"}
+naemon_user=${naemon_user:-"%%NAEMONUSER%%"}
+naemon_group=${naemon_group:-"%%NAEMONGROUP%%"}
+naemon_configfile=${naemon_configfile:-"%%ETCDIR%%/naemon.cfg"}
+
+required_files="${naemon_configfile}"
+command_args="${command_args} ${naemon_configfile}"
+
+naemon_checkconfig()
+{
+  echo -n "Performing sanity check of naemon configuration: "
+  ${command} -v ${naemon_configfile} 2>&1 >/dev/null
+  if [ $? != 0 ]; then
+    echo "FAILED"
+    ${command} -v ${naemon_configfile}
+    return 1
+  else
+    echo "OK"
+  fi
+}
+
+reload_precmd()
+{
+  if ! naemon_checkconfig; then
+    return 1
+  fi
+}
+
+start_precmd()
+{
+  if ! naemon_checkconfig; then
+    return 1
+  fi
+
+  mkdir -p "%%NAEMONDIR%%"
+  chown "${naemon_user}":"${naemon_group}" "%%NAEMONDIR%%"
+}
+
+run_rc_command "$1"

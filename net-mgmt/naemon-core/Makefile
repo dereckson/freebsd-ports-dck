@@ -15,9 +15,23 @@ USES=	autoreconf gmake gnome gettext-runtime libtool
 GNU_CONFIGURE=	yes
 USE_GNOME+=	glib20
 USE_LDCONFIG=	yes
+USE_RC_SUBR=	naemon
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	naemon
+
+PLIST_SUB=	NAEMONUSER=${NAEMONUSER} \
+		NAEMONGROUP=${NAEMONGROUP}
+SUB_LIST=	NAEMONDIR=${NAEMONDIR} \
+		NAEMONUSER=${NAEMONUSER} \
+		NAEMONGROUP=${NAEMONGROUP}
+SUB_FILES=	pkg-message
+
+ETCDIR=	${PREFIX}/etc/naemon
+
+NAEMONUSER?=	naemon
+NAEMONGROUP?=	naemon
+NAEMONDIR?=	/var/spool/naemon
 
 USERS=	naemon
 GROUPS=	naemon

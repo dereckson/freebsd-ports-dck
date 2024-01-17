@@ -1,17 +1,17 @@
-bin/naemon
-bin/naemonstats
-etc/naemon/conf.d/commands.cfg
-etc/naemon/conf.d/contacts.cfg
-etc/naemon/conf.d/localhost.cfg
-etc/naemon/conf.d/printer.cfg
-etc/naemon/conf.d/switch.cfg
-etc/naemon/conf.d/templates/contacts.cfg
-etc/naemon/conf.d/templates/hosts.cfg
-etc/naemon/conf.d/templates/services.cfg
-etc/naemon/conf.d/timeperiods.cfg
-etc/naemon/conf.d/windows.cfg
-etc/naemon/naemon.cfg
-etc/naemon/resource.cfg
+@(,%%NAEMONGROUP%%,755) bin/naemon
+@(,%%NAEMONGROUP%%,755) bin/naemonstats
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/commands.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/contacts.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/localhost.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/printer.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/switch.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/templates/contacts.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/templates/hosts.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/templates/services.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/timeperiods.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/conf.d/windows.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/naemon.cfg
+@(,%%NAEMONGROUP%%,) etc/naemon/resource.cfg
 include/naemon/broker.h
 include/naemon/buildopts.h
 include/naemon/checks.h
@@ -86,7 +86,7 @@ lib/libnaemon.so.0.0.0
 libdata/pkgconfig/naemon.pc
 man/man8/naemon.8.gz
 man/man8/naemonstats.8.gz
-@dir /var/cache/naemon/checkresults
-@dir /var/cache/naemon
-@dir /var/log/naemon/archives
-@dir /var/log/naemon
+@dir(%%NAEMONUSER%%,%%NAEMONGROUP%%,775) /var/cache/naemon/checkresults
+@dir(%%NAEMONUSER%%,%%NAEMONGROUP%%,775) /var/cache/naemon
+@dir(%%NAEMONUSER%%,%%NAEMONGROUP%%,775) /var/log/naemon/archives
+@dir(%%NAEMONUSER%%,%%NAEMONGROUP%%,775) /var/log/naemon

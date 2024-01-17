@@ -1,0 +1,10 @@
+[
+{
+message: <<EOT
+ Enable Naemon in /etc/rc.conf with the following line:
+
+   naemon_enable="YES"
+EOT
+type: install
+}
+]
