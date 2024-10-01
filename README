@@ -11,6 +11,8 @@
 │   └── p5-Inline-Python        To test
 ├── french
 │   └── fortunes-fr             Ok in default encoding, adding UTF-8 support before submitting
+├── games
+│   └── roll                    Still to fix GitHub download, build and installation OK
 ├── irc
 │   └── irccat                  Port installs and uninstalls, but software have a ruby path problem
 ├── misc
