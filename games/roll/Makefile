@@ -13,6 +13,7 @@ GNU_CONFIGURE=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	matteocorti
+GH_TAGNAME=	v${PORTVERSION}
 
 INSTALL_TARGET=install-strip
 
