@@ -21,7 +21,6 @@
 │   ├── dibbler                Needs testing
 │   ├── gophrier                Needs testing
 │   ├── quicktun                Should be splitted in two ports instead to let build.sh fetch and build libnacl
-│   ├── tclsoap                 Ready to submit
 │   └── vdetelweb               configure: error: liblwipv6 missing
 ├── net-im
 │   ├── spectrum		Waits swiften, then deps to recheck
@@ -31,6 +30,4 @@
 │   └── nacl                    2011-02-15, djb's crypto lib required for net/quicktun (TODO: clean this port now)
 └── textproc
     └── p5-marc-moose           Needs devel/p5-MooseX-RW
-│   └── xmlgen			OK
-└── x11
-    └── guake                   Ensure GConf .schema does install/uninstall properly
+    └── xmlgen			OK
