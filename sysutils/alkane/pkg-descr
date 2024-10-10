@@ -1,0 +1,8 @@
+The `alkane` command allows to manage the Nasqueron PaaS Alkane,
+to host PHP sites through nginx and php-fpm, and static sites
+directly through nginx.
+
+It can work in two complementary modes:
+
+  - as a command, to allow local system administration task and debug
+  - as a server, to allow components to interact with it for automation
