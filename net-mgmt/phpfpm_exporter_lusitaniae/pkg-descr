@@ -1,0 +1,4 @@
+Prometheus exporter for PHP-FPM.
+
+This exporter is best to use when php-fpm is configured
+to use UNIX sockets.

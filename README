@@ -26,6 +26,8 @@
 │   ├── spectrum		Waits swiften, then deps to recheck
 │   ├── swiften			SCons should be aware of path to find deps
 │   └── ttytter                 Waiting pr 151352, then it will be the current maintainer work	
+├── net-mgmt
+│   ├── phpfpm_exporter_lusitaniae  OK
 ├── security
 │   └── nacl                    2011-02-15, djb's crypto lib required for net/quicktun (TODO: clean this port now)
 ├── sysutils
