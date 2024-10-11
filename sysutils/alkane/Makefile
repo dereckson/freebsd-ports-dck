@@ -1,5 +1,5 @@
 PORTNAME=	alkane
-PORTVERSION=	0.1.2
+PORTVERSION=	0.2.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	dereckson@gmail.com
@@ -9,7 +9,8 @@ WWW=		https://agora.nasqueron.org/Operations_grimoire/Alkane
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	rust-nightly>0:lang/rust-nightly
+BUILD_DEPENDS=	rust-nightly>0:lang/rust-nightly \
+				${PREFIX}/share/public_suffix_list/public_suffix_list.dat:dns/public_suffix_list
 
 USES=		cargo
 USE_GITHUB=	yes
@@ -23,11 +24,11 @@ CARGO_CRATES=	aead-0.3.2 \
 		aes-soft-0.6.4 \
 		aesni-0.10.0 \
 		aho-corasick-1.1.3 \
-		anstream-0.3.2 \
+		anstream-0.6.15 \
 		anstyle-1.0.8 \
 		anstyle-parse-0.2.5 \
 		anstyle-query-1.1.1 \
-		anstyle-wincon-1.0.2 \
+		anstyle-wincon-3.0.4 \
 		atty-0.2.14 \
 		autocfg-1.4.0 \
 		base64-0.9.3 \
@@ -39,10 +40,10 @@ CARGO_CRATES=	aead-0.3.2 \
 		cfg-if-0.1.10 \
 		cfg-if-1.0.0 \
 		cipher-0.2.5 \
-		clap-4.2.7 \
-		clap_builder-4.2.7 \
-		clap_derive-4.2.0 \
-		clap_lex-0.4.1 \
+		clap-4.5.20 \
+		clap_builder-4.5.20 \
+		clap_derive-4.5.18 \
+		clap_lex-0.7.2 \
 		colorchoice-1.0.2 \
 		cookie-0.11.5 \
 		cpufeatures-0.2.14 \
@@ -54,7 +55,8 @@ CARGO_CRATES=	aead-0.3.2 \
 		devise_core-0.2.1 \
 		digest-0.9.0 \
 		dotenv-0.15.0 \
-		env_logger-0.10.2 \
+		env_filter-0.1.2 \
+		env_logger-0.11.5 \
 		equivalent-1.0.1 \
 		filetime-0.2.25 \
 		fsevent-0.4.0 \
@@ -67,10 +69,9 @@ CARGO_CRATES=	aead-0.3.2 \
 		glob-0.3.1 \
 		hashbrown-0.12.3 \
 		hashbrown-0.15.0 \
-		heck-0.4.1 \
+		heck-0.5.0 \
 		hermit-abi-0.1.19 \
 		hermit-abi-0.3.9 \
-		hermit-abi-0.4.0 \
 		hkdf-0.10.0 \
 		hmac-0.10.1 \
 		httparse-1.9.5 \
@@ -82,7 +83,7 @@ CARGO_CRATES=	aead-0.3.2 \
 		inotify-0.7.1 \
 		inotify-sys-0.1.5 \
 		iovec-0.1.4 \
-		is-terminal-0.4.13 \
+		is_terminal_polyfill-1.70.1 \
 		itoa-1.0.11 \
 		kernel32-sys-0.2.2 \
 		language-tags-0.2.2 \
@@ -102,7 +103,6 @@ CARGO_CRATES=	aead-0.3.2 \
 		net2-0.2.39 \
 		notify-4.0.18 \
 		num_cpus-1.16.0 \
-		once_cell-1.20.2 \
 		opaque-debug-0.3.1 \
 		pear-0.1.5 \
 		pear_codegen-0.1.5 \
@@ -136,11 +136,10 @@ CARGO_CRATES=	aead-0.3.2 \
 		slab-0.4.9 \
 		smallvec-1.13.2 \
 		state-0.4.2 \
-		strsim-0.10.0 \
+		strsim-0.11.1 \
 		subtle-2.4.1 \
 		syn-0.15.44 \
 		syn-2.0.79 \
-		termcolor-1.4.1 \
 		time-0.1.45 \
 		tinyvec-1.8.0 \
 		tinyvec_macros-0.1.1 \
@@ -168,34 +167,29 @@ CARGO_CRATES=	aead-0.3.2 \
 		winapi-i686-pc-windows-gnu-0.4.0 \
 		winapi-util-0.1.9 \
 		winapi-x86_64-pc-windows-gnu-0.4.0 \
-		windows-sys-0.48.0 \
 		windows-sys-0.52.0 \
 		windows-sys-0.59.0 \
-		windows-targets-0.48.5 \
 		windows-targets-0.52.6 \
-		windows_aarch64_gnullvm-0.48.5 \
 		windows_aarch64_gnullvm-0.52.6 \
-		windows_aarch64_msvc-0.48.5 \
 		windows_aarch64_msvc-0.52.6 \
-		windows_i686_gnu-0.48.5 \
 		windows_i686_gnu-0.52.6 \
 		windows_i686_gnullvm-0.52.6 \
-		windows_i686_msvc-0.48.5 \
 		windows_i686_msvc-0.52.6 \
-		windows_x86_64_gnu-0.48.5 \
 		windows_x86_64_gnu-0.52.6 \
-		windows_x86_64_gnullvm-0.48.5 \
 		windows_x86_64_gnullvm-0.52.6 \
-		windows_x86_64_msvc-0.48.5 \
 		windows_x86_64_msvc-0.52.6 \
 		ws2_32-sys-0.2.1 \
 		yansi-0.5.1 \
 		zerocopy-0.7.35 \
 		zerocopy-derive-0.7.35
 
-PLIST_FILES=	bin/alkane
+PLIST_FILES=	bin/alkane etc/rc.d/alkane
 
 pre-build:
-	cd ${WRKSRC} && make data
+	${MKDIR} ${WRKSRC}/src/data
+	${CP} ${PREFIX}/share/public_suffix_list/public_suffix_list.dat ${WRKSRC}/src/data/public_suffix_list.dat
+
+post-install:
+	${INSTALL_SCRIPT} ${WRKSRC}/support/freebsd/rc.d/alkane ${STAGEDIR}${PREFIX}/etc/rc.d
 
 .include <bsd.port.mk>
