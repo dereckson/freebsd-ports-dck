@@ -1,6 +1,3 @@
-# Created by: Dereckson <dereckson@gmail.com>
-# $FreeBSD$
-
 PORTNAME=	salt-wrapper
 DISTVERSION=	0.0.2
 CATEGORIES=	sysutils
@@ -8,6 +5,7 @@ MASTER_SITES=	https://ftp.nasqueron.org/pub/software/${PORTNAME}/
 
 MAINTAINER=	dereckson@gmail.com
 COMMENT=	Wrapper for salt to use several Salt instances
+WWW=	https://docs.nasqueron.org/salt-wrapper/
 
 LICENSE=	BSD2CLAUSE
 
