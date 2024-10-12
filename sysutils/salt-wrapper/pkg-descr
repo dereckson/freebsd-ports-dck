@@ -1,0 +1,5 @@
+salt-wrapper allows to invoke Salt with correct config dir and sudo capability.
+It allows to run several Salt master instances, each with its own config dir
+on the same server, without modifying the commands' workflow.
+
+WWW: https://docs.nasqueron.org/salt-wrapper/
