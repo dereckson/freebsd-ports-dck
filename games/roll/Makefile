@@ -8,7 +8,7 @@ WWW=	https://matteocorti.github.io/roll/
 
 LICENSE=	GPLv2
 
-USES=	autoreconf
+USES=	autoreconf bison pkgconfig
 GNU_CONFIGURE=	yes
 
 USE_GITHUB=	yes
